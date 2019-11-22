@@ -1,0 +1,41 @@
+body {
+    font-family: 'ALS Ekibastuz';
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+svg,
+img {
+    vertical-align: middle;
+}
+
+#overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    background: rgba(#000, .5);
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: none;
+}

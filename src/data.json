@@ -1,0 +1,23 @@
+{
+    "sitename": "Завсклад",
+    "lang": "ru",
+    "phone": "+7 (920) 087 - 87 - 77",
+    "phone_link": "tel:89200878777",
+    "mail": "asd@yandex.ru",
+    "address": "302030, Россия, г.Орел, Московская улица,61",  
+    "pages": {
+        "index": "index.html",
+        "catalog": "catalog.html",
+        "market": "market.html",
+        "services": "services.html",
+        "ms_post": "ms_post.html",
+        "useful_articles": "useful_articles.html",
+        "useful_docs": "useful_docs.html",
+        "about": "about.html",
+        "search": "search.html",
+        "basket": "basket.html",
+        "basket_empty": "basket_empty.html",
+        "err404": "404.html",
+        "page": "page.html"
+    }
+}
