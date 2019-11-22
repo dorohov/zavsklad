@@ -1,0 +1,217 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: #fff;
+    &__top {
+        background: #F8F8F8;
+        &__inner {
+            height: 70px;
+            display: flex;
+            align-items: center;
+        }
+        &__right {
+            margin-left: auto;
+            height: 100%;
+            ul {
+                display: flex;
+                height: 100%;
+                li {
+                    margin-left: 35px;
+                    height: 100%;
+                    a {
+                        display: flex;
+                        height: 100%;
+                        align-items: center;
+                        color: #000;
+                        font-weight: bold;
+                        transition: .25s all ease;
+                        span.is--icon {
+                            margin-right: 7px;
+                        }
+                        &:hover {
+                            color: $c-primary;
+                        }
+                    }
+                }
+            }
+        }
+        &__address {
+            display: flex;
+            align-items: center;
+            span.is--icon {
+                margin-right: 10px;
+            }
+        }
+    }
+    &__main {
+        &__inner {
+            display: flex;
+            height: 130px;
+            align-items: center;
+        }
+        &__logo {
+            min-width: 154px;
+            width: 154px;
+            margin-right: 40px;
+        }
+        &__nav {
+            width: 100%;
+            display: flex;
+            &__search {
+                width: 100%;
+                &__field {
+                    display: flex;
+                    position: relative;
+                    &::after {
+                        content: url(../../img/search.svg);
+                        position: absolute;
+                        left: 20px;
+                        top: 50%;
+                        margin-top: -9px;
+                    }
+                    input[type="text"] {
+                        width: 100%;
+                        border-right: 0;
+                        padding-left: 50px;
+                        position: relative;
+                        z-index: 5;
+                        background: transparent;
+                    }
+                    button {
+                        min-width: 190px;
+                        width: 190px;
+                    }
+                    .is--select {
+                        position: relative;
+                        select {
+                            border: 2px solid $c-primary;
+                            padding: 15px 50px 15px 30px;
+                            font-weight: 900;
+                            font-size: 14px;
+                            color: #000;
+                            height: 100%;
+                        }
+                        &::after {
+                            content: url(../../img/select.svg);
+                            position: absolute;
+                            top: 50%;
+                            margin-top: -8px;
+                            right: 30px;
+                        }
+                    }
+                }
+            }
+            &__basket {
+                margin-left: 30px;
+                a {
+                    height: 100%;
+                }
+            }
+        }
+        &__mobile {
+            display: none;
+            margin-left: auto;
+            button {
+                padding: 0;
+                border: 2px solid $c-primary;
+                padding: 3px;
+                display: flex;
+                align-items: center;
+                span.hamburger-box {
+                    width: 30px;
+                }
+                span.hamburger-inner {
+                    background-color: $c-primary;
+                    height: 2px;
+                    width: 30px;
+                    &::before,
+                    &::after {
+                        background-color: $c-primary;
+                        height: 2px;
+                        width: 30px;
+                    }
+                    &::before {
+                        top: -8px;
+                    }
+                    &::after {
+                        bottom: -8px;
+                    }
+                }
+            }
+        }
+    }
+    &__bottom {
+        border-top: 1px solid #E5E5E5;
+        border-bottom: 1px solid #E5E5E5;
+        &__inner {
+            height: 65px;
+            ul {
+                display: flex;
+                height: 100%;
+                li {
+                    height: 100%;
+                    width: 100%;
+                    a {
+                        display: flex;
+                        height: 100%;
+                        align-items: center;
+                        width: 100%;
+                        justify-content: center;
+                        color: #000;
+                        font-weight: bold;
+                        font-size: 18px;
+                        transition: .25s all ease;
+                        &:hover {
+                            color: $c-primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .navbar {
+        &__main {
+            &__nav {
+                &__search {
+                    &__field {
+                        button {
+                            min-width: 120px;
+                            width: 120px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1025px) {
+    .navbar {
+        &__top,
+        &__bottom {
+            display: none;
+        }
+        &__main {
+            border-bottom: 1px solid #E5E5E5;
+            &__inner {
+                height: 70px;
+            }
+            &__nav {
+                display: none;
+            }
+            &__mobile {
+                display: block;
+            }
+            &__logo {
+                min-width: 0;
+                max-width: 70px;
+                width: 100%;
+            }
+        }
+    }
+}
