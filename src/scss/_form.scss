@@ -8,4 +8,157 @@ input[type="email"] {
     &:focus {
         border-color: $c-primary;
     }
+    &::placeholder {
+        color: #000;
+    }
+    &.is--red {
+        border: 2px solid $c-primary;
+    }
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    position: relative;
+    &__sq {
+        margin-right: 7px;
+        label {
+            height: 12px;
+            width: 12px;
+            border: 1px solid #E5E5E5;
+            display: block;
+            position: relative;
+            cursor: pointer;
+            &::after {
+                content: '';
+                width: 4px;
+                height: 4px;
+                background: $c-primary;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin: -2px 0 0 -2px;
+                opacity: 0;
+            }
+        }
+        input {
+            display: none;
+            &:checked + label {
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    &__label {
+        font-size: 14px;
+        a {
+            color: #000;
+            font-weight: bold;
+            transition: .25s all ease;
+            &:hover {
+                color: $c-primary;
+            }
+        }
+    }
+}
+
+.form {
+    padding: 95px 0;
+    background: #F8F8F8;
+    &__fields {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px 15px -15px;
+        &__block {
+            max-width: 25%;
+            width: 100%;
+            padding: 0 15px;
+            .parsley-errors-list.filled {
+                left: 20%;
+                &::after {
+                    left: 50%;
+                }
+            }
+            &__inner {
+                position: relative;
+                input,
+                button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.parsley-errors-list.filled {
+    position: absolute;
+    top: calc(100% + 15px);
+    left: 0;
+    background: $c-primary;
+    font-size: 14px;
+    color: #fff;
+    padding: 5px 10px;
+    z-index: 999;
+    &::after {
+        bottom: 100%;
+        left: 7px;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(136, 183, 213, 0);
+        border-bottom-color: $c-primary;
+        border-width: 7px;
+        margin-left: -7px;
+    }
+}
+
+.select {
+    position: relative;
+    select {
+        border: 2px solid $c-primary;
+        padding: 15px 50px 15px 30px;
+        font-weight: 900;
+        font-size: 14px;
+        color: #000;
+        height: 100%;
+        cursor: pointer;
+    }
+    &::after {
+        content: url(../../img/select.svg);
+        position: absolute;
+        top: 50%;
+        margin-top: -8px;
+        right: 30px;
+    }
+}
+
+@media (max-width: 1025px) {
+    .form {
+        &__fields {
+            &__block {
+                max-width: 50%;
+                margin-bottom: 15px;
+                &.is--quest,
+                &.is--submit {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .form {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        &__fields {
+            &__block {
+                max-width: 100% !important;
+            }
+        }
+    }
 }

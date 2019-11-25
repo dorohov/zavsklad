@@ -1,0 +1,38 @@
+<div class="form">
+    <form action="" class="form__inner container">
+        <div class="heading mb60">
+            <div class="heading__inner">Задайте интересующий Вас вопрос</div>
+        </div>
+        <div class="form__fields">
+            <div class="form__fields__block">
+                <div class="form__fields__block__inner">
+                    <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                </div>
+            </div>
+            <div class="form__fields__block">
+                <div class="form__fields__block__inner">
+                    <input type="text" id="phone" name="phone" class="in-phone" placeholder="Ваш телефон" required data-parsley-minlength="16" minlength="16">
+                </div>
+            </div>
+            <div class="form__fields__block is--quest">
+                <div class="form__fields__block__inner">
+                    <input type="text" id="quest" name="quest" placeholder="Ваш вопрос" required data-parsley-minlength="10" minlength="10">
+                </div>
+            </div>
+            <div class="form__fields__block is--submit">
+                <div class="form__fields__block__inner">
+                    <button class="btn">Отправить</button>
+                </div>
+            </div>
+        </div>
+        <div class="form__cop">
+            <span class="checkbox">
+                <div class="checkbox__sq">
+                    <input type="checkbox" required name="cop" value="cop" id="cop">
+                    <label for="cop"></label>
+                </div>
+                <label class="checkbox__label" for="cop">Я соглашаюсь с <a href="#" target="_blank">политикой обработки персональных данных</a></label>
+            </span>
+        </div>
+    </form>
+</div>

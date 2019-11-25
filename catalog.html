@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Каталог — Завсклад</title>
+    <link rel="stylesheet" href="dist/css/jquery.custom-scrollbar.css">
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar__top">
+            <div class="navbar__top__inner container">
+                <div class="navbar__top__left">
+                    <div class="navbar__top__address">
+                        <span class="is--icon is--white">
+                            <svg class="svg-marker-dims svg is--marker">
+                                <use xlink:href="img/svg/sprites.svg#marker"></use>
+                            </svg>
+                        </span>
+                        302030, Россия, г.Орел, Московская улица,61
+                    </div>
+                </div>
+                <div class="navbar__top__right">
+                    <ul>
+                        <li>
+                            <a href="mailto:asd@yandex.ru">
+                                <span class="is--icon is--white">
+                                    <svg class="svg-email-dims svg is--email">
+                                        <use xlink:href="img/svg/sprites.svg#email"></use>
+                                    </svg>
+                                </span>
+                                asd@yandex.ru
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:89200878777">
+                                <span class="is--icon is--white">
+                                    <svg class="svg-phone-dims svg is--phone">
+                                        <use xlink:href="img/svg/sprites.svg#phone"></use>
+                                    </svg>
+                                </span>
+                                +7 (920) 087 - 87 - 77
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="navbar__main">
+            <div class="navbar__main__inner container">
+                <div class="navbar__main__logo">
+                    <a href="index.html">
+                        <img src="img/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="navbar__main__nav">
+                    <form class="navbar__main__nav__search">
+                        <div class="navbar__main__nav__search__field">
+                            <input type="text" placeholder="Введите название или артикул">
+                            <div class="is--select select">
+                                <select name="" id="">
+                                    <option>Все бренды</option>
+                                    <option>John Deer</option>
+                                    <option>Vadestad</option>
+                                    <option>Lemken</option>
+                                    <option>Krone</option>
+                                    <option>Amazone</option>
+                                    <option>Gaspardo</option>
+                                    <option>Bourgauld</option>
+                                    <option>AGCO</option>
+                                    <option>Claas</option>
+                                    <option>Krone</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn">Найти</button>
+                        </div>
+                    </form>
+                    <div class="navbar__main__nav__basket">
+                        <a href="basket.html" class="btn is--inverse">
+                            <svg class="svg-basket-dims svg is--basket">
+                                <use xlink:href="img/svg/sprites.svg#basket"></use>
+                            </svg>
+                            Корзина
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar__main__mobile">
+                    <button class="hamburger hamburger--squeeze" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="navbar__bottom">
+            <div class="navbar__bottom__inner container">
+                <ul>
+                    <li><a href="index.html">Каталог</a></li>
+                    <li><a href="market.html">Вторичный рынок</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="useful_articles.html">Полезное</a></li>
+                    <li><a href="about.html">О проекте</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="navbar-aside">
+        <div class="navbar-aside__inner">
+            <div class="navbar-aside__menu">
+                <ul>
+                    <li><a href="index.html">Каталог</a></li>
+                    <li><a href="market.html">Вторичный рынок</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="useful_articles.html">Полезное</a></li>
+                    <li><a href="about.html">О проекте</a></li>
+                    <li class="devider"></li>
+                    <li><a href="basket.html">Корзина</a></li>
+                </ul>
+            </div>
+            <div class="navbar-aside__search">
+                <form action="">
+                    <input type="text" placeholder="Поиск">
+                    <button type="search">
+                        <img src="img/search.svg" alt="">
+                    </button>
+                </form>
+            </div>
+            <div class="navbar-aside__info">
+                <ul>
+                    <li>302030, Россия, г.Орел, Московская улица,61</li>
+                    <li><a href="mailto:asd@yandex.ru">asd@yandex.ru</a></li>
+                    <li><a href="tel:89200878777">+7 (920) 087 - 87 - 77</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="page">
+            <div class="container">
+                <div class="breadcrumbs">
+                    <div class="breadcrumbs__inner">
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li><span>Каталог</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="heading mb60">
+                    <div class="heading__inner">Каталог запасных частей</div>
+                </div>
+                <div class="catalog__filters">
+                    <form class="catalog__filters__inner">
+
+                        <div class="catalog__filters__block">
+                            <div class="catalog__filters__block__inner">
+                                <div class="select">
+                                    <select name="" id="">
+                                        <option value="">Выбрать имя</option>
+                                        <option value="">Какой-то пункт</option>
+                                        <option value="">Какой-то пункт</option>
+                                        <option value="">Какой-то пункт</option>
+                                        <option value="">Какой-то пункт</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog__filters__block">
+                            <div class="catalog__filters__block__inner">
+                                <div class="select">
+                                    <select name="" id="">
+                                        <option value="">Выбрать бренд</option>
+                                        <option value="">Какой-то пункт</option>
+                                        <option value="">Какой-то пункт</option>
+                                        <option value="">Какой-то пункт</option>
+                                        <option value="">Какой-то пункт</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog__filters__block">
+                            <div class="catalog__filters__block__inner is--search">
+                                <input type="text" class="is--red" placeholder="Введите артикул">
+                            </div>
+                        </div>
+
+                        <div class="catalog__filters__block">
+                            <div class="catalog__filters__block__inner">
+                                <button class="is--clear" type="button">
+                                    <svg class="svg-close-dims svg is--close">
+                                        <use xlink:href="img/svg/sprites.svg#close"></use>
+                                    </svg>
+                                    Сбросить фильтр
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="catalog__table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>№</th>
+                                <th>Артикул</th>
+                                <th>Название</th>
+                                <th>Кол-во</th>
+                                <th>Цена, <svg class="svg-ruble-dims svg is--ruble">
+                                        <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                    </svg></th>
+                                <th>Актуальность</th>
+                                <th>В корзину</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr data-text="№ 8905">
+                                <td>8905</td>
+                                <td data-text="Артикул">323 4567</td>
+                                <td data-text="Название" class="is--title">Лемех предплужница</td>
+                                <td data-text="Кол-во">23</td>
+                                <td data-text="Цена" class="is--price">4 300, <svg class="svg-ruble-dims svg is--ruble">
+                                        <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                    </svg></td>
+                                <td data-text="Актуальность">15.10.19</td>
+                                <td>
+                                    <a href="basket.html" class="btn is--inverse is--nm">
+                                        <svg class="svg-basket-dims svg is--basket">
+                                            <use xlink:href="img/svg/sprites.svg#basket"></use>
+                                        </svg>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr data-text="№ 8905">
+                                <td>8905</td>
+                                <td data-text="Артикул">323 4567</td>
+                                <td data-text="Название" class="is--title">Лемех предплужница</td>
+                                <td data-text="Кол-во">23</td>
+                                <td data-text="Цена" class="is--price">4 300, <svg class="svg-ruble-dims svg is--ruble">
+                                        <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                    </svg></td>
+                                <td data-text="Актуальность">15.10.19</td>
+                                <td>
+                                    <a href="basket.html" class="btn is--inverse is--nm">
+                                        <svg class="svg-basket-dims svg is--basket">
+                                            <use xlink:href="img/svg/sprites.svg#basket"></use>
+                                        </svg>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr data-text="№ 8905">
+                                <td>8905</td>
+                                <td data-text="Артикул">323 4567</td>
+                                <td data-text="Название" class="is--title">Лемех предплужница</td>
+                                <td data-text="Кол-во">23</td>
+                                <td data-text="Цена" class="is--price">4 300, <svg class="svg-ruble-dims svg is--ruble">
+                                        <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                    </svg></td>
+                                <td data-text="Актуальность">15.10.19</td>
+                                <td>
+                                    <a href="basket.html" class="btn is--inverse is--nm">
+                                        <svg class="svg-basket-dims svg is--basket">
+                                            <use xlink:href="img/svg/sprites.svg#basket"></use>
+                                        </svg>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr data-text="№ 8905">
+                                <td>8905</td>
+                                <td data-text="Артикул">323 4567</td>
+                                <td data-text="Название" class="is--title">Лемех предплужница</td>
+                                <td data-text="Кол-во">23</td>
+                                <td data-text="Цена" class="is--price">4 300, <svg class="svg-ruble-dims svg is--ruble">
+                                        <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                    </svg></td>
+                                <td data-text="Актуальность">15.10.19</td>
+                                <td>
+                                    <a href="basket.html" class="btn is--inverse is--nm">
+                                        <svg class="svg-basket-dims svg is--basket">
+                                            <use xlink:href="img/svg/sprites.svg#basket"></use>
+                                        </svg>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr data-text="№ 8905">
+                                <td>8905</td>
+                                <td data-text="Артикул">323 4567</td>
+                                <td data-text="Название" class="is--title">Лемех предплужница</td>
+                                <td data-text="Кол-во">23</td>
+                                <td data-text="Цена" class="is--price">4 300, <svg class="svg-ruble-dims svg is--ruble">
+                                        <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                    </svg></td>
+                                <td data-text="Актуальность">15.10.19</td>
+                                <td>
+                                    <a href="basket.html" class="btn is--inverse is--nm">
+                                        <svg class="svg-basket-dims svg is--basket">
+                                            <use xlink:href="img/svg/sprites.svg#basket"></use>
+                                        </svg>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr data-text="№ 8905">
+                                <td>8905</td>
+                                <td data-text="Артикул">323 4567</td>
+                                <td data-text="Название" class="is--title">Лемех предплужница</td>
+                                <td data-text="Кол-во">23</td>
+                                <td data-text="Цена" class="is--price">4 300, <svg class="svg-ruble-dims svg is--ruble">
+                                        <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                    </svg></td>
+                                <td data-text="Актуальность">15.10.19</td>
+                                <td>
+                                    <a href="basket.html" class="btn is--inverse is--nm">
+                                        <svg class="svg-basket-dims svg is--basket">
+                                            <use xlink:href="img/svg/sprites.svg#basket"></use>
+                                        </svg>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr data-text="№ 8905">
+                                <td>8905</td>
+                                <td data-text="Артикул">323 4567</td>
+                                <td data-text="Название" class="is--title">Лемех предплужница</td>
+                                <td data-text="Кол-во">23</td>
+                                <td data-text="Цена" class="is--price">4 300, <svg class="svg-ruble-dims svg is--ruble">
+                                        <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                    </svg></td>
+                                <td data-text="Актуальность">15.10.19</td>
+                                <td>
+                                    <a href="basket.html" class="btn is--inverse is--nm">
+                                        <svg class="svg-basket-dims svg is--basket">
+                                            <use xlink:href="img/svg/sprites.svg#basket"></use>
+                                        </svg>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr data-text="№ 8905">
+                                <td>8905</td>
+                                <td data-text="Артикул">323 4567</td>
+                                <td data-text="Название" class="is--title">Лемех предплужница</td>
+                                <td data-text="Кол-во">23</td>
+                                <td data-text="Цена" class="is--price">4 300, <svg class="svg-ruble-dims svg is--ruble">
+                                        <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                    </svg></td>
+                                <td data-text="Актуальность">15.10.19</td>
+                                <td>
+                                    <a href="basket.html" class="btn is--inverse is--nm">
+                                        <svg class="svg-basket-dims svg is--basket">
+                                            <use xlink:href="img/svg/sprites.svg#basket"></use>
+                                        </svg>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr data-text="№ 8905">
+                                <td>8905</td>
+                                <td data-text="Артикул">323 4567</td>
+                                <td data-text="Название" class="is--title">Лемех предплужница</td>
+                                <td data-text="Кол-во">23</td>
+                                <td data-text="Цена" class="is--price">4 300, <svg class="svg-ruble-dims svg is--ruble">
+                                        <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                    </svg></td>
+                                <td data-text="Актуальность">15.10.19</td>
+                                <td>
+                                    <a href="basket.html" class="btn is--inverse is--nm">
+                                        <svg class="svg-basket-dims svg is--basket">
+                                            <use xlink:href="img/svg/sprites.svg#basket"></use>
+                                        </svg>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr data-text="№ 8905">
+                                <td>8905</td>
+                                <td data-text="Артикул">323 4567</td>
+                                <td data-text="Название" class="is--title">Лемех предплужница</td>
+                                <td data-text="Кол-во">23</td>
+                                <td data-text="Цена" class="is--price">4 300, <svg class="svg-ruble-dims svg is--ruble">
+                                        <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                    </svg></td>
+                                <td data-text="Актуальность">15.10.19</td>
+                                <td>
+                                    <a href="basket.html" class="btn is--inverse is--nm">
+                                        <svg class="svg-basket-dims svg is--basket">
+                                            <use xlink:href="img/svg/sprites.svg#basket"></use>
+                                        </svg>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr data-text="№ 8905">
+                                <td>8905</td>
+                                <td data-text="Артикул">323 4567</td>
+                                <td data-text="Название" class="is--title">Лемех предплужница</td>
+                                <td data-text="Кол-во">23</td>
+                                <td data-text="Цена" class="is--price">4 300, <svg class="svg-ruble-dims svg is--ruble">
+                                        <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                    </svg></td>
+                                <td data-text="Актуальность">15.10.19</td>
+                                <td>
+                                    <a href="basket.html" class="btn is--inverse is--nm">
+                                        <svg class="svg-basket-dims svg is--basket">
+                                            <use xlink:href="img/svg/sprites.svg#basket"></use>
+                                        </svg>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr data-text="№ 8905">
+                                <td>8905</td>
+                                <td data-text="Артикул">323 4567</td>
+                                <td data-text="Название" class="is--title">Лемех предплужница</td>
+                                <td data-text="Кол-во">23</td>
+                                <td data-text="Цена" class="is--price">4 300, <svg class="svg-ruble-dims svg is--ruble">
+                                        <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                    </svg></td>
+                                <td data-text="Актуальность">15.10.19</td>
+                                <td>
+                                    <a href="basket.html" class="btn is--inverse is--nm">
+                                        <svg class="svg-basket-dims svg is--basket">
+                                            <use xlink:href="img/svg/sprites.svg#basket"></use>
+                                        </svg>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr data-text="№ 8905">
+                                <td>8905</td>
+                                <td data-text="Артикул">323 4567</td>
+                                <td data-text="Название" class="is--title">Лемех предплужница</td>
+                                <td data-text="Кол-во">23</td>
+                                <td data-text="Цена" class="is--price">4 300, <svg class="svg-ruble-dims svg is--ruble">
+                                        <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                    </svg></td>
+                                <td data-text="Актуальность">15.10.19</td>
+                                <td>
+                                    <a href="basket.html" class="btn is--inverse is--nm">
+                                        <svg class="svg-basket-dims svg is--basket">
+                                            <use xlink:href="img/svg/sprites.svg#basket"></use>
+                                        </svg>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="paginate">
+                    <ul>
+                        <li class="is--first">
+                            <a href="#">
+                                <svg class="svg-p1-dims svg is--p1">
+                                    <use xlink:href="img/svg/sprites.svg#p1"></use>
+                                </svg>
+                                Первая
+                            </a>
+                        </li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><span>3</span></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li class="is--last">
+                            <a href="#">
+                                Последняя
+                                <svg class="svg-p2-dims svg is--p2">
+                                    <use xlink:href="img/svg/sprites.svg#p2"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <form action="" class="form__inner container">
+                <div class="heading mb60">
+                    <div class="heading__inner">Задайте интересующий Вас вопрос</div>
+                </div>
+                <div class="form__fields">
+                    <div class="form__fields__block">
+                        <div class="form__fields__block__inner">
+                            <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                        </div>
+                    </div>
+                    <div class="form__fields__block">
+                        <div class="form__fields__block__inner">
+                            <input type="text" id="phone" name="phone" class="in-phone" placeholder="Ваш телефон" required data-parsley-minlength="16" minlength="16">
+                        </div>
+                    </div>
+                    <div class="form__fields__block is--quest">
+                        <div class="form__fields__block__inner">
+                            <input type="text" id="quest" name="quest" placeholder="Ваш вопрос" required data-parsley-minlength="10" minlength="10">
+                        </div>
+                    </div>
+                    <div class="form__fields__block is--submit">
+                        <div class="form__fields__block__inner">
+                            <button class="btn">Отправить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__cop">
+                    <span class="checkbox">
+                        <div class="checkbox__sq">
+                            <input type="checkbox" required name="cop" value="cop" id="cop">
+                            <label for="cop"></label>
+                        </div>
+                        <label class="checkbox__label" for="cop">Я соглашаюсь с <a href="#" target="_blank">политикой обработки персональных данных</a></label>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__inner container">
+            <div class="footer__logo">
+                <a href="index.html">
+                    <img src="img/logo_small.svg" alt="">
+                </a>
+            </div>
+            <div class="footer__info">
+                <div class="footer__info__block">
+                    <span class="is--icon is--dark">
+                        <svg class="svg-marker-dims svg is--marker">
+                            <use xlink:href="img/svg/sprites.svg#marker"></use>
+                        </svg>
+                    </span>
+                    г.Орел, Московская улица,61
+                </div>
+                <div class="footer__info__block">
+                    <a href="mailto:asd@yandex.ru">
+                        <span class="is--icon is--dark">
+                            <svg class="svg-email-dims svg is--email">
+                                <use xlink:href="img/svg/sprites.svg#email"></use>
+                            </svg>
+                        </span>
+                        asd@yandex.ru
+                    </a>
+                </div>
+                <div class="footer__info__block">
+                    <a href="tel:89200878777">
+                        <span class="is--icon is--dark">
+                            <svg class="svg-phone-dims svg is--phone">
+                                <use xlink:href="img/svg/sprites.svg#phone"></use>
+                            </svg>
+                        </span>
+                        +7 (920) 087 - 87 - 77
+                    </a>
+                </div>
+            </div>
+            <div class="footer__dd">
+                <a href="https://dorohov.design/" target="_blank" class="footer__dd__inner">
+                    <div class="footer__dd__text">Разработано в - </div>
+                    <div class="footer__dd__logo">
+                        <svg class="svg-dd-dims svg is--dd">
+                            <use xlink:href="img/svg/sprites.svg#dd"></use>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <div class="overlay"></div>
+    <script src="dist/js/jquery-3.3.1.min.js"></script>
+    <script src="dist/js/svg4everybody.min.js"></script>
+    <script src="dist/js/imask.js"></script>
+    <script src="dist/js/jquery.modal.min.js"></script>
+    <script src="dist/js/parsley.min.js"></script>
+    <script src="dist/js/i18n/ru.js"></script>
+    <script src="dist/js/jquery.custom-scrollbar.min.js"></script>
+    <script src="dist/js/main.js"></script>
+    <script>
+        svg4everybody();
+    </script>
+</body>
+
+</html>

@@ -1,2 +1,43 @@
-<footer class="footer"></footer>
+<footer class="footer">
+    <div class="footer__inner container">
+        <div class="footer__logo">
+            <a href="@@pages.index">
+                <img src="img/logo_small.svg" alt="">
+            </a>
+        </div>
+        <div class="footer__info">
+            <div class="footer__info__block">
+                <span class="is--icon is--dark">
+                    @@include('component.svg.html', {"name": "marker"})
+                </span>
+                г.Орел, Московская улица,61
+            </div>
+            <div class="footer__info__block">
+                <a href="mailto:@@mail">
+                    <span class="is--icon is--dark">
+                        @@include('component.svg.html', {"name": "email"})
+                    </span>
+                    @@mail
+                </a>
+            </div>
+            <div class="footer__info__block">
+                <a href="@@phone_link">
+                    <span class="is--icon is--dark">
+                        @@include('component.svg.html', {"name": "phone"})
+                    </span>
+                    @@phone
+                </a>
+            </div>
+        </div>
+        <div class="footer__dd">
+            <a href="https://dorohov.design/" target="_blank" class="footer__dd__inner">
+                <div class="footer__dd__text">Разработано в - </div>
+                <div class="footer__dd__logo">
+                    @@include('component.svg.html', {"name": "dd"})
+                </div>
+            </a>
+        </div>
+    </div>
+</footer>
+<div class="overlay"></div>
 @@include('component.scripts.html')
