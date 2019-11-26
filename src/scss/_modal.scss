@@ -31,14 +31,61 @@
     vertical-align: middle;
     position: relative;
     z-index: 2;
-    max-width: 710px;
+    max-width: 605px;
     box-sizing: border-box;
     width: 90%;
     background-color: #FFFFFF;
     text-align: center;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.13);
-    padding: 75px 160px 70px 160px;    
-    color: #334059;
+    padding: 45px 85px;
+    &__heading {
+        margin-bottom: 30px;
+        &__text {
+            font-size: 36px;
+            font-weight: bold;
+        }
+        &__sub {
+            padding-top: 15px;
+        }
+    }
+    &__form {
+        max-width: 350px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        &__field {
+            margin-bottom: 10px;
+            position: relative;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            input {
+                width: 100%;
+                &[type="text"],
+                &[type="email"],
+                &[type="password"] {
+                    border-color: $c-primary;
+                    &::placeholder {
+                        font-weight: bold;
+                    }
+                }
+            }
+            button {
+                width: 100%;
+                margin-top: 20px;
+                min-height: 54px;
+            }
+        }
+        &__cop {
+            padding-top: 20px;
+            font-size: 14px;
+            line-height: 133.7%;
+        }
+    }
+    &-close {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
 }
 
 .modal a.close-modal {
@@ -109,25 +156,21 @@
 
 @media (max-width: 768px) {
     .modal {
-        background: #fff;
-        padding-top: 55px;
-        padding-bottom: 45px;
-        padding-left: 30px;
-        padding-right: 30px;
         width: 100%;
+        padding: 25px 20px;
         &__heading {
-            font-size: 24px;
-            margin-bottom: 20px;
+            &__text {
+                font-size: 20px;
+            }
+            &__sub {
+                font-size: 14px;
+                padding-top: 5px;
+            }
         }
-        .form-field {
-            padding-top: 10px !important;
-        }
-        .form__cop {
-            padding-top: 20px;
-        }
-        a.is--close {
-            width: 40px;
-            height: 40px;
+        &__form {
+            &__cop {
+                font-size: 13px;
+            }
         }
     }
 }

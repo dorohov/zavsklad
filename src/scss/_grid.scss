@@ -71,6 +71,10 @@
     }
 }
 
+span.btn {
+    cursor: default;
+}
+
 span.is--icon {
     width: 18px;
     height: 18px;
@@ -155,7 +159,7 @@ span.is--icon {
                 color: $c-primary;
             }
             &.is--first {
-                margin-right: 10px;
+                margin-right: 20px;
                 padding: 0;
                 a {
                     color: $c-primary;
@@ -166,7 +170,7 @@ span.is--icon {
                 }
             }
             &.is--last {
-                margin-left: 10px;
+                margin-left: 20px;
                 padding: 0;
                 a {
                     color: $c-primary;
@@ -174,6 +178,25 @@ span.is--icon {
                 svg {
                     margin-left: 5px;
                     fill: $c-primary;
+                }
+            }
+            &.is--num {
+                position: relative;
+                &::after {
+                    content: '';
+                    width: 4px;
+                    height: 4px;
+                    background: $c-primary;
+                    border-radius: 100%;
+                    position: absolute;
+                    right: -2px;
+                    top: 50%;
+                    margin-top: -2px;
+                }
+                &.is--nl {
+                    &::after {
+                        content: none;
+                    }
                 }
             }
         }
@@ -190,6 +213,26 @@ span.is--icon {
     &__right {
         margin-left: auto;
     }
+    &__search {
+        display: flex;
+        position: relative;
+        input[type="text"] {
+            width: 345px;
+            padding-left: 45px;
+            background: transparent;
+            z-index: 5;
+        }
+        &::after {
+            content: url(../../img/search.svg);
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            margin-top: -9px;
+        }
+        .btn {
+            min-width: 65px;
+        }
+    }
 }
 
 .heading {
@@ -197,10 +240,219 @@ span.is--icon {
         font-weight: bold;
         font-size: 36px;
     }
+    &__sub {
+        font-weight: bold;
+        line-height: 135.4%;
+        padding-top: 25px;
+    }
+    &__btn {
+        padding-top: 60px;
+    }
+    &.is--btns {
+        display: flex;
+        align-items: flex-end;
+        & > * {
+            margin-right: 30px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
 }
 
 .mb60 {
     margin-bottom: 60px;
+}
+
+.wrap-aside {
+    height: 550px;
+    &__inner {
+        height: 100%;
+        display: flex;
+    }
+    &__aside {
+        max-width: 350px;
+        min-width: 350px;
+        width: 350px;
+        background: #F8F8F8;
+        padding: 35px 20px 45px 65px;
+        height: 100%;
+        &__inner {
+            padding-right: 20px;
+            height: 100%;
+            ul {
+                li {
+                    margin-bottom: 30px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    a {
+                        color: #000;
+                        font-weight: bold;
+                        font-size: 16px;
+                        display: block;
+                        transition: .25s all ease;
+                        &:hover {
+                            color: $c-primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__main {
+        width: 100%;
+        max-height: 100%;
+        height: 100%;
+        padding-left: 30px;
+        &__inner {
+            padding-right: 30px;
+            max-height: 100%;
+            height: 100%;
+            .overview {
+                width: 100%;
+            }
+        }
+    }
+    &__articles {
+        width: 100%;
+        &__block {
+            margin-bottom: 35px;
+            width: 100%;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &__inner {
+                display: flex;
+                color: #000;
+            }
+            &__left {
+                min-width: 225px;
+                width: 225px;
+            }
+            &__right {
+                padding: 4px 0 5px 0;
+                width: 100%;
+                &__inner {
+                    background: #F8F8F8;
+                    height: 100%;
+                    padding: 20px 30px 20px 30px;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                }
+                &__top {
+                    display: flex;
+                    align-items: flex-end;
+                }
+                &__title {
+                    max-width: 290px;
+                    font-weight: bold;
+                }
+                &__price {
+                    margin-left: auto;
+                    font-weight: bold;
+                    font-size: 18px;
+                    svg {
+                        vertical-align: baseline;
+                    }
+                }
+                &__center {
+                    font-size: 14px;
+                }
+                &__bottom {
+                    font-size: 14px;
+                    font-weight: bold;
+                    span.is--icon {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+    &__docs {
+        overflow: hidden;
+        &__inner {
+            margin: -12px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &__block {
+            max-width: 50%;
+            width: 100%;
+            padding: 12px;
+            &__inner {
+                display: flex;
+                align-items: center;
+                padding: 10px 20px;
+                background: #F8F8F8;
+                height: 100%;
+                min-height: 95px;
+            }
+            &__icon {
+                margin-right: 10px;
+                svg {
+                    fill: $c-primary;
+                }
+            }
+            &__text {
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 130%;
+                color: #000;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .head {
+        &__search {
+            input[type="text"] {
+                width: calc(100% - 65px);
+            }
+        }
+    }
+    .wrap-aside {
+        height: auto;
+        &__inner {
+            flex-wrap: wrap;
+        }
+        &__aside {
+            max-width: 100%;
+            min-width: 0;
+            width: 100%;
+            margin-bottom: 30px;
+            padding: 30px 20px 30px 30px;
+            &__inner {
+                overflow: auto;
+                max-height: 250px;
+                ul {
+                    li {
+                        margin-bottom: 15px;
+                        a {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+        &__main {
+            padding-left: 0;
+            max-height: 500px;
+            height: 100%;
+            overflow: auto;
+            &__inner {
+                padding-right: 0;
+            }
+        }
+        &__articles {
+            &__block {
+                margin-bottom: 15px;
+            }
+        }
+    }
 }
 
 @media (max-width: 1025px) {
@@ -208,10 +460,24 @@ span.is--icon {
         flex-wrap: wrap;
         &__left {
             width: 100%;
-            margin: 0 0 20px 0;
+            margin: 0;
         }
         &__right {
             margin: 0;
+            padding-top: 20px;
+        }
+    }
+    .heading {
+        &.is--btns {
+            display: block;
+            .heading {
+                &__inner {
+                    margin-bottom: 15px;
+                }
+            }
+            & > * {
+                margin-right: 10px;
+            }
         }
     }
 }
@@ -224,6 +490,9 @@ span.is--icon {
         &__inner {
             font-size: 26px;
         }
+        &__btn {
+            padding-top: 30px;
+        }
     }
     .mb60 {
         margin-bottom: 30px;
@@ -231,5 +500,72 @@ span.is--icon {
     .page {
         padding-top: 50px;
         padding-bottom: 50px;
+    }
+    .paginate {
+        ul {
+            li {
+                &.is--first,
+                &.is--last {
+                    display: none;
+                }
+            }
+        }
+    }
+    .wrap-aside {
+        &__aside {
+            padding: 20px;
+        }
+        &__articles {
+            &__block {
+                &__left {
+                    display: none;
+                }
+                &__right {
+                    &__top,
+                    &__center {
+                        margin-bottom: 15px;
+                    }
+                    &__top {
+                        flex-wrap: wrap;
+                    }
+                    &__title {
+                        max-width: 100%;
+                        width: 100%;
+                        margin-bottom: 10px;
+                    }
+                    &__price {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        &__docs {
+            &__inner {
+                margin: 0;
+            }
+            &__block {
+                max-width: 100%;
+                padding: 0;
+                margin-bottom: 10px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                &__inner {
+                    min-height: 0;
+                }
+                &__icon {
+                    svg {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+                &__text {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .btn {
+        padding: 10px 15px;
     }
 }

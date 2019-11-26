@@ -14,6 +14,7 @@
     <meta name="theme-color" content="#ffffff">
     <title>Главная — Завсклад</title>
     <link rel="stylesheet" href="dist/css/jquery.custom-scrollbar.css">
+    <link rel="stylesheet" href="dist/css/jquery.fancybox.css">
     <link rel="stylesheet" href="dist/css/style.css">
 </head>
 
@@ -107,7 +108,7 @@
         <div class="navbar__bottom">
             <div class="navbar__bottom__inner container">
                 <ul>
-                    <li><a href="index.html">Каталог</a></li>
+                    <li class="is--active"><a href="index.html">Каталог</a></li>
                     <li><a href="market.html">Вторичный рынок</a></li>
                     <li><a href="services.html">Услуги</a></li>
                     <li><a href="useful_articles.html">Полезное</a></li>
@@ -423,7 +424,7 @@
                             <input type="checkbox" required name="cop" value="cop" id="cop">
                             <label for="cop"></label>
                         </div>
-                        <label class="checkbox__label" for="cop">Я соглашаюсь с <a href="#" target="_blank">политикой обработки персональных данных</a></label>
+                        <label class="checkbox__label" for="cop">Я соглашаюсь с <a href="text.html" target="_blank">политикой обработки персональных данных</a></label>
                     </span>
                 </div>
             </form>
@@ -478,6 +479,44 @@
             </div>
         </div>
     </footer>
+    <div id="modal_form" class="modal">
+        <a href="#ex1" rel="modal:open" class="modal-close">
+            <img src="img/modal_close.png" alt="">
+        </a>
+        <div class="modal__heading">
+            <div class="modal__heading__text">Оформление заказа</div>
+            <div class="modal__heading__sub">Заполните форму ниже и мы свяжемся с Вами <br> по выбранным Вами позициям</div>
+        </div>
+        <div class="modal__form">
+            <div class="modal__form__inner">
+                <div class="modal__form__field">
+                    <input type="text" placeholder="Ваше имя" required>
+                </div>
+                <div class="modal__form__field">
+                    <input type="text" placeholder="Ваш телефон" required>
+                </div>
+                <div class="modal__form__field">
+                    <input type="text" placeholder="Ваша почта" required>
+                </div>
+                <div class="modal__form__field">
+                    <button type="submit" class="btn">Оформить</button>
+                </div>
+            </div>
+            <div class="modal__form__cop">
+                Вы можете связаться с нами напрямую: <br>
+                По телефону: +7 (920) 087 - 87 - 77 <br>
+                По электронной почте: asd@yandex.ru
+            </div>
+        </div>
+    </div>
+    <div id="modal_success" class="modal">
+        <a href="#ex1" rel="modal:open" class="modal-close">
+            <img src="img/modal_close.png" alt="">
+        </a>
+        <div class="modal__heading">
+            <div class="modal__heading__text">Ваше сообщение отправлено!</div>
+        </div>
+    </div>
     <div class="overlay"></div>
     <script src="dist/js/jquery-3.3.1.min.js"></script>
     <script src="dist/js/svg4everybody.min.js"></script>
@@ -486,6 +525,7 @@
     <script src="dist/js/parsley.min.js"></script>
     <script src="dist/js/i18n/ru.js"></script>
     <script src="dist/js/jquery.custom-scrollbar.min.js"></script>
+    <script src="dist/js/jquery.fancybox.min.js"></script>
     <script src="dist/js/main.js"></script>
     <script>
         svg4everybody();

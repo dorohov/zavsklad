@@ -154,6 +154,11 @@
                             color: $c-primary;
                         }
                     }
+                    &.is--active {
+                        a {
+                            color: $c-primary;
+                        }
+                    }
                 }
             }
         }

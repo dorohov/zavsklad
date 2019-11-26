@@ -136,6 +136,35 @@ input[type="email"] {
     }
 }
 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.counter {
+    &__inner {
+        display: flex;
+        align-items: center;
+        input[type="number"] {
+            max-width: 55px;
+            width: 100%;
+            border: 2px solid $c-primary;
+            height: 40px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 900;
+        }
+        button {
+            background: transparent;
+            border: 0;
+            cursor: pointer;
+            padding: 0 15px;
+            height: 40px;
+        }
+    }
+}
+
 @media (max-width: 1025px) {
     .form {
         &__fields {
@@ -158,6 +187,9 @@ input[type="email"] {
         &__fields {
             &__block {
                 max-width: 100% !important;
+            }
+            button.btn {
+                min-height: 54px;
             }
         }
     }

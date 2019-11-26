@@ -1,0 +1,24 @@
+<div class="page">
+    <div class="container">
+        <div class="head mb60">
+            <div class="head__left">
+                @@include('../components/component.breadcrumbs.html')
+                <div class="heading is--btns">
+                    <div class="heading__inner">
+                        Полезное
+                    </div>
+                    <a href="@@pages.useful_articles" class="btn is--inverse">Статьи</a>
+                    <span class="btn">Документы</span>
+                </div>
+            </div>
+            <div class="head__right">
+                <form class="head__search">
+                    <input type="text" placeholder="Введите название товара или артикул">
+                    <button class="btn" type="submit">Найти</button>
+                </form>
+            </div>
+        </div>
+        @@include('useful.list.html', {"icon": "d_pdf"})
+    </div>
+</div>
+@@include('../simple/simple.form.html')

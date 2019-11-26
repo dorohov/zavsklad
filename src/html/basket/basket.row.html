@@ -1,0 +1,28 @@
+<div class="basket__row">
+    <div class="basket__row__inner">
+        <div class="basket__row__title">@@title</div>
+        <div class="basket__row__name">
+            <span class="basket__row__label">
+                <span>Имя:</span> @@name
+            </span>
+        </div>
+        <div class="basket__row__brand">
+            <span class="basket__row__label">
+                <span>Бренд:</span> @@brand
+            </span>
+        </div>
+        <div class="basket__row__art">
+            <span class="basket__row__label">
+                <span>Артикул:</span> @@art
+            </span>
+        </div>
+        <div class="basket__row__counter">
+            @@include('basket.counter.html')
+        </div>
+        <div class="basket__row__trash">
+            <button>
+                @@include('../components/component.svg.html', {"name": "trash"})
+            </button>
+        </div>
+    </div>
+</div>

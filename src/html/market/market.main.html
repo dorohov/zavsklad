@@ -1,0 +1,72 @@
+<div class="page">
+    <div class="container">
+        <div class="head mb60">
+            <div class="head__left">
+                @@include('../components/component.breadcrumbs.html')
+                <div class="heading">
+                    <div class="heading__inner">@@heading</div>
+                </div>
+            </div>
+            <div class="head__right">
+                <form class="head__search">
+                    <input type="text" placeholder="Введите название товара или артикул">
+                    <button class="btn" type="submit">Найти</button>
+                </form>
+            </div>
+        </div>
+        <div class="wrap-aside">
+            <div class="wrap-aside__inner">
+                @@include('../simple/simple.aside.html')
+                <div class="wrap-aside__main">
+                    <div class="wrap-aside__main__inner c-scroll">
+                        <div class="wrap-aside__articles">
+                            @@include('market.block.html', {
+                                "image": "a1.jpg",
+                                "title": "Тема: «Нормальный интеграл по ориентированной области в XXI веке»",
+                                "price": "3 588",
+                                "sub": "Тяжелая дисковая борона",
+                                "mark": "Орловская область"
+                            })
+                            @@include('market.block.html', {
+                                "image": "a2.jpg",
+                                "title": "Тема: «Отрицательный символ: гипотеза и теории»",
+                                "price": "3 588",
+                                "sub": "Тяжелая дисковая борона",
+                                "mark": "Орловская область"
+                            })
+                            @@include('market.block.html', {
+                                "image": "a3.jpg",
+                                "title": "Тема: «Почему вероятна арифметическая прогрессия?»",
+                                "price": "3 588",
+                                "sub": "Тяжелая дисковая борона",
+                                "mark": "Орловская область"
+                            })
+                            @@include('market.block.html', {
+                                "image": "a1.jpg",
+                                "title": "Тема: «Нормальный интеграл по ориентированной области в XXI веке»",
+                                "price": "3 588",
+                                "sub": "Тяжелая дисковая борона",
+                                "mark": "Орловская область"
+                            })
+                            @@include('market.block.html', {
+                                "image": "a2.jpg",
+                                "title": "Тема: «Отрицательный символ: гипотеза и теории»",
+                                "price": "3 588",
+                                "sub": "Тяжелая дисковая борона",
+                                "mark": "Орловская область"
+                            })
+                            @@include('market.block.html', {
+                                "image": "a3.jpg",
+                                "title": "Тема: «Почему вероятна арифметическая прогрессия?»",
+                                "price": "3 588",
+                                "sub": "Тяжелая дисковая борона",
+                                "mark": "Орловская область"
+                            })
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('../simple/simple.form.html')

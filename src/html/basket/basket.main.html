@@ -1,0 +1,36 @@
+<div class="page">
+    <div class="container">
+        <div class="head mb60">
+            <div class="head__left">
+                @@include('../components/component.breadcrumbs.html')
+                <div class="heading">
+                    <div class="heading__inner">Корзина</div>
+                </div>
+            </div>
+        </div>
+        <div class="basket__rows">
+            @@include('basket.row.html', {
+                "title": "Тема: «Конструктивный стиль: гипотеза и теории»",
+                "name": "Наименование",
+                "brand": "John Deer",
+                "art": "567 87843"
+            })
+            @@include('basket.row.html', {
+                "title": "Тема: «Конструктивный стиль: гипотеза и теории»",
+                "name": "Наименование",
+                "brand": "John Deer 2",
+                "art": "567 87843"
+            })
+            @@include('basket.row.html', {
+                "title": "Тема: «Конструктивный стиль: гипотеза и теории»",
+                "name": "Наименование",
+                "brand": "John Deer 33",
+                "art": "567 87843"
+            })
+        </div>
+        <div class="basket__navs">
+            <a href="#" class="btn">Очистить корзину</a>
+            <a href="#" class="btn is--inverse">Оформить заказ</a>
+        </div>
+    </div>
+</div>
