@@ -20,7 +20,7 @@ function openModal(modalID) {
         })
 
         // openModal('#modal_form')
-        openModal('#modal_success')
+        // openModal('#modal_success')
 
     })
 })(jQuery);
