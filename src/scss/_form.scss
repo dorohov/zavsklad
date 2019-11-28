@@ -126,6 +126,7 @@ input[type="email"] {
         color: #000;
         height: 100%;
         cursor: pointer;
+        background: transparent;
     }
     &::after {
         content: url(../../img/select.svg);
@@ -133,6 +134,9 @@ input[type="email"] {
         top: 50%;
         margin-top: -8px;
         right: 30px;
+        z-index: -1;
+        width: 10px;
+        height: 18px;
     }
 }
 

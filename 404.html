@@ -210,23 +210,23 @@
         </div>
     </footer>
     <div id="modal_form" class="modal">
-        <a href="#ex1" rel="modal:open" class="modal-close">
+        <a href="#" rel="modal:close" class="modal-close">
             <img src="img/modal_close.png" alt="">
         </a>
         <div class="modal__heading">
             <div class="modal__heading__text">Оформление заказа</div>
             <div class="modal__heading__sub">Заполните форму ниже и мы свяжемся с Вами <br> по выбранным Вами позициям</div>
         </div>
-        <div class="modal__form">
+        <form class="modal__form">
             <div class="modal__form__inner">
-                <div class="modal__form__field">
+                <div class="modal__form__field is--user">
                     <input type="text" placeholder="Ваше имя" required>
                 </div>
-                <div class="modal__form__field">
-                    <input type="text" placeholder="Ваш телефон" required>
+                <div class="modal__form__field is--phone">
+                    <input type="text" placeholder="Ваш телефон" class="in-phone" required minlength="16" data-parsley-minlength="16">
                 </div>
-                <div class="modal__form__field">
-                    <input type="text" placeholder="Ваша почта" required>
+                <div class="modal__form__field is--email">
+                    <input type="email" placeholder="Ваша почта" required>
                 </div>
                 <div class="modal__form__field">
                     <button type="submit" class="btn">Оформить</button>
@@ -237,10 +237,10 @@
                 По телефону: +7 (920) 087 - 87 - 77 <br>
                 По электронной почте: asd@yandex.ru
             </div>
-        </div>
+        </form>
     </div>
     <div id="modal_success" class="modal is--success">
-        <a href="#ex1" rel="modal:open" class="modal-close">
+        <a href="#" rel="modal:close" class="modal-close">
             <img src="img/modal_close.png" alt="">
         </a>
         <div class="modal__heading">

@@ -61,6 +61,36 @@
         &__field {
             margin-bottom: 10px;
             position: relative;
+            &.is--user {
+                &::after {
+                    content: url(../../img/m_f_user.svg);
+                    position: absolute;
+                    right: 30px;
+                    top: 50%;
+                    margin-top: -10px;
+                    z-index: -1;
+                }
+            }
+            &.is--phone {
+                &::after {
+                    content: url(../../img/m_f_phone.svg);
+                    position: absolute;
+                    right: 30px;
+                    top: 50%;
+                    margin-top: -10px;
+                    z-index: -1;
+                }
+            }
+            &.is--email {
+                &::after {
+                    content: url(../../img/m_f_email.svg);
+                    position: absolute;
+                    right: 30px;
+                    top: 50%;
+                    margin-top: -10px;
+                    z-index: -1;
+                }
+            }
             &:last-child {
                 margin-bottom: 0;
             }
@@ -70,6 +100,8 @@
                 &[type="email"],
                 &[type="password"] {
                     border-color: $c-primary;
+                    background: transparent;
+                    padding-right: 50px;
                     &::placeholder {
                         font-weight: bold;
                     }

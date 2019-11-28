@@ -1,5 +1,9 @@
 .footer {
     background: #212121;
+    &__logo {
+        max-width: 93px;
+        max-height: 24px;
+    }
     &__inner {
         height: 140px;
         display: flex;
