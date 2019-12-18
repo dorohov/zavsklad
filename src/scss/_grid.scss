@@ -209,6 +209,9 @@ span.is--icon {
     display: flex;
     align-items: flex-end;
     overflow: hidden;
+    &.mb60 {
+        margin-bottom: 30px;
+    }
     &__left {
         margin-right: 50px;
     }
