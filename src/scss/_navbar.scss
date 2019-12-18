@@ -12,7 +12,8 @@
     &__top {
         background: #F8F8F8;
         &__inner {
-            height: 70px;
+            // height: 70px;
+            height: 50px;
             display: flex;
             align-items: center;
         }
@@ -133,7 +134,8 @@
         border-top: 1px solid #E5E5E5;
         border-bottom: 1px solid #E5E5E5;
         &__inner {
-            height: 65px;
+            // height: 65px;
+            height: 50px;
             ul {
                 display: flex;
                 height: 100%;

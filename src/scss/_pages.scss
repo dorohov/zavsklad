@@ -157,6 +157,21 @@
                         svg {
                             fill: #fff;
                         }
+                        button {
+                            background: transparent;
+                            padding: 0;
+                            border: 0;
+                            color: #fff;
+                            font-weight: 900;
+                            cursor: pointer;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            svg {
+                                margin-right: 10px;
+                            }
+                        }
                     }
                 }
             }
