@@ -241,6 +241,9 @@ span.is--icon {
 }
 
 .heading {
+    &.mb60 {
+        margin-bottom: 30px;
+    }
     &__inner {
         font-weight: bold;
         font-size: 36px;
